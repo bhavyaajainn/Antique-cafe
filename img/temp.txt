@@ -1,0 +1,20 @@
+<div class="about-container">
+        <div class="about-data">
+          <div class="about-heading">About our cafe</div>
+          <div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </div>
+          <div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </div>
+        </div>
+        <a href="#Contact" class="contactBtn"
+          ><i class="fa-solid fa-comments comment-icon"></i> Contact</a
+        >
+      </div>

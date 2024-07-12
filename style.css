@@ -1,0 +1,950 @@
+:root {
+  --text-color: #cc9966;
+  --background-color: rgba(0, 0, 0, 0.7);
+  --menu-text-color: #544639;
+  --menu-background-color: #544639;
+  --about-text-color: #006666;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.intro {
+  background-image: url("img/antique-cafe-bg-01.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav {
+  display: none;
+  padding: 1em;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: var(--background-color);
+  gap: 1em;
+  font-size: 1.2em;
+  width: -webkit-fill-available;
+}
+
+.active {
+  text-decoration: 3px solid var(--text-color) underline !important;
+}
+
+.nav-item {
+  color: var(--text-color);
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000;
+  &:hover {
+    text-decoration: 3px solid var(--text-color) underline;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.intro-data {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.heading {
+  background-color: var(--background-color);
+  margin: 1em;
+  width: fit-content;
+  padding: 3em;
+  align-self: center;
+  margin-top: 10em;
+}
+
+.heading1 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+.heading2 {
+  color: var(--text-color);
+  font-size: 1.2em;
+  margin: 0.5em;
+  text-align: center;
+}
+
+.intro-text {
+  background-color: var(--background-color);
+  margin: 1em;
+  width: 20%;
+  padding: 3em;
+  align-self: center;
+  color: white;
+  line-height: 1.5em;
+}
+
+.mug-icon {
+  color: var(--text-color);
+  margin-right: 0.5em;
+}
+
+.explore {
+  background-color: var(--background-color);
+  margin: 1em;
+  width: 20%;
+  padding: 1em;
+  align-self: center;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 0.2em;
+}
+
+.menu {
+  background-image: url("img/antique-cafe-bg-02.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.menu-heading {
+  color: var(--menu-text-color);
+  background-color: white;
+  padding: 0.5em;
+  font-size: 2em;
+  align-self: center;
+  width: 20%;
+  margin-top: 3em;
+  text-align: center;
+  border-radius: 0.2em;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--menu-background-color);
+  padding: 3em;
+  width: fit-content;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  gap: 1em;
+}
+
+.menu-img {
+  border-radius: 0.2em;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-data {
+  margin: 1em 0.5em 0em 2em;
+}
+
+.menu-item-heading {
+  color: var(--text-color);
+  font-size: 1.2em;
+}
+
+.menu-item-spec {
+  color: white;
+  font-size: 1.2em;
+}
+
+.about-heading {
+  color: var(--about-text-color);
+  font-size: 2em;
+}
+
+.about {
+  background-image: url("img/antique-cafe-bg-03.jpg");
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.about-data {
+  width: 30%;
+  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  line-height: 1.5em;
+  align-self: center;
+  margin-top: 8em;
+}
+
+.contactBtn {
+  background-color: var(--about-text-color);
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+  align-self: center;
+  text-decoration: none;
+  border-radius: 0.5em;
+  width: fit-content;
+  margin-bottom: 4em;
+}
+
+.about-container {
+  position: relative;
+}
+
+.contact {
+  background-image: url("img/antique-cafe-bg-04.jpg");
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.contact-data {
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5em;
+  margin: 0.5em;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  border-radius: 0.2em;
+  font-size: 1.2em;
+}
+
+.contact-heading {
+  color: var(--about-text-color);
+  font-size: 2em;
+}
+
+.contact-text {
+  color: var(--about-text-color);
+}
+
+.map-btn {
+  background-color: var(--about-text-color);
+  color: white;
+  padding: 1em;
+  width: fit-content;
+  border-radius: 0.2em;
+  align-self: center;
+}
+
+.dot {
+  color: white;
+  padding: 0.2em;
+}
+
+.map {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 14.5em;
+  width: fit-content;
+  border-radius: 0.2em;
+  align-self: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+  padding: 1em;
+}
+
+.firstNavToggle {
+    display: block;
+    color: var(--text-color);
+    padding: 1em;
+    font-size: 2em;
+  }
+
+
+input,
+textarea {
+  padding: 1em;
+  color: white;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--text-color);
+  font-size: 1.2em;
+  outline: none;
+}
+
+.send {
+  font-size: 1.2em;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  padding: 3em;
+  font-size: 1.3em;
+  margin-top: 10em;
+}
+
+.navMenu-active{
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    margin-top: 3.5em;
+}
+
+@media (min-width: 530px) {
+  .active {
+    text-decoration: 3px solid var(--text-color) underline !important;
+  }
+
+  .intro {
+    background-image: url("img/antique-cafe-bg-01.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav {
+    display: flex;
+    padding: 1em 3em;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: var(--background-color);
+    gap: 2em;
+    font-size: 1.7em;
+    width: -webkit-fill-available;
+  }
+
+  .nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000;
+    &:hover {
+      text-decoration: 3px solid var(--text-color) underline;
+    }
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .intro-data {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .heading {
+    background-color: var(--background-color);
+    margin: 1em;
+    width: fit-content;
+    padding: 3em;
+    align-self: center;
+    margin-top: 10em;
+  }
+
+  .heading1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .heading2 {
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin: 0.5em;
+    text-align: center;
+  }
+
+  .intro-text {
+    background-color: var(--background-color);
+    margin: 1em;
+    width: 20%;
+    padding: 3em;
+    align-self: center;
+    color: white;
+    line-height: 1.5em;
+  }
+
+  .mug-icon {
+    color: var(--text-color);
+    margin-right: 0.5em;
+  }
+
+  .explore {
+    background-color: var(--background-color);
+    margin: 1em;
+    width: 20%;
+    padding: 1em;
+    align-self: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 0.2em;
+  }
+
+  .menu {
+    background-image: url("img/antique-cafe-bg-02.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .menu-heading {
+    color: var(--menu-text-color);
+    background-color: white;
+    padding: 0.5em;
+    font-size: 2em;
+    align-self: center;
+    width: 20%;
+    margin-top: 3em;
+    text-align: center;
+    border-radius: 0.2em;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--menu-background-color);
+    padding: 3em;
+    width: fit-content;
+    border-radius: 0.5em;
+    margin: 1em 6em;
+    gap: 1em;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .menu-img {
+    border-radius: 0.2em;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-data {
+    margin: 1em 0.5em 0em 2em;
+  }
+
+  .menu-item-heading {
+    color: var(--text-color);
+    font-size: 1.2em;
+  }
+
+  .menu-item-spec {
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .about-heading {
+    color: var(--about-text-color);
+    font-size: 2em;
+  }
+
+  .about {
+    background-image: url("img/antique-cafe-bg-03.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .about-data {
+    width: 30%;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    line-height: 1.5em;
+    align-self: center;
+    margin-top: 8em;
+  }
+
+  .contactBtn {
+    background-color: var(--about-text-color);
+    color: white;
+    padding: 1em;
+    font-size: 1.5em;
+    align-self: center;
+    text-decoration: none;
+    border-radius: 0.5em;
+    width: fit-content;
+    margin-bottom: 4em;
+  }
+
+  .about-container {
+    position: relative;
+  }
+
+  .contact {
+    background-image: url("img/antique-cafe-bg-04.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .firstNavToggle {
+    display: none;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .contact-data {
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5em;
+    margin: 12em 6em 0em 6em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border-radius: 0.2em;
+    font-size: 1.2em;
+  }
+
+  .contact-heading {
+    color: var(--about-text-color);
+    font-size: 2em;
+  }
+
+  .contact-text {
+    color: var(--about-text-color);
+  }
+
+  .map-btn {
+    background-color: var(--about-text-color);
+    color: white;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 0.2em;
+    align-self: center;
+  }
+
+  .dot {
+    color: white;
+    padding: 0.2em;
+  }
+
+  .map {
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 14.5em;
+    width: fit-content;
+    border-radius: 0.2em;
+    align-self: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+    padding: 3em;
+  }
+
+  input,
+  textarea {
+    padding: 1em;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    font-size: 1.2em;
+    outline: none;
+  }
+
+  .send {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .copyright {
+    color: white;
+    text-align: center;
+    padding: 3em;
+    font-size: 1.3em;
+    margin-top: 10em;
+  }
+}
+
+@media (min-width: 1082px) {
+  .active {
+    text-decoration: 3px solid var(--text-color) underline !important;
+  }
+  .intro {
+    background-image: url("img/antique-cafe-bg-01.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .nav {
+    display: flex;
+    padding: 1em 3em;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: var(--background-color);
+    gap: 2em;
+    font-size: 1.7em;
+    width: -webkit-fill-available;
+  }
+
+  .nav-item {
+    color: var(--text-color);
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000;
+    &:hover {
+      text-decoration: 3px solid var(--text-color) underline;
+    }
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .intro-data {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .heading {
+    background-color: var(--background-color);
+    margin: 1em;
+    width: fit-content;
+    padding: 3em;
+    align-self: center;
+    margin-top: 10em;
+  }
+
+  .heading1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .heading2 {
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin: 0.5em;
+    text-align: center;
+  }
+
+  .intro-text {
+    background-color: var(--background-color);
+    margin: 1em;
+    width: 20%;
+    padding: 3em;
+    align-self: center;
+    color: white;
+    line-height: 1.5em;
+  }
+
+  .mug-icon {
+    color: var(--text-color);
+    margin-right: 0.5em;
+  }
+
+  .explore {
+    background-color: var(--background-color);
+    margin: 1em;
+    width: 20%;
+    padding: 1em;
+    align-self: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 0.2em;
+  }
+
+  .menu {
+    background-image: url("img/antique-cafe-bg-02.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .menu-heading {
+    color: var(--menu-text-color);
+    background-color: white;
+    padding: 0.5em;
+    font-size: 2em;
+    align-self: center;
+    width: 20%;
+    margin-top: 3em;
+    text-align: center;
+    border-radius: 0.2em;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--menu-background-color);
+    padding: 3em;
+    width: 30%;
+    border-radius: 0.5em;
+    margin: 1em 6em;
+    gap: 1em;
+  }
+
+  .menu-img {
+    border-radius: 0.2em;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .menu-data {
+    margin: 1em 0.5em 0em 2em;
+  }
+
+  .menu-item-heading {
+    color: var(--text-color);
+    font-size: 1.2em;
+  }
+
+  .menu-item-spec {
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .about-heading {
+    color: var(--about-text-color);
+    font-size: 2em;
+  }
+
+  .about {
+    background-image: url("img/antique-cafe-bg-03.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+  }
+
+  .about-data {
+    width: 30%;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    line-height: 1.5em;
+    align-self: center;
+    margin-top: 8em;
+  }
+
+  .contactBtn {
+    background-color: var(--about-text-color);
+    color: white;
+    padding: 1em;
+    font-size: 1.5em;
+    align-self: center;
+    text-decoration: none;
+    border-radius: 0.5em;
+    width: fit-content;
+    margin-bottom: 4em;
+  }
+
+  .about-container {
+    position: relative;
+  }
+
+  .contact {
+    background-image: url("img/antique-cafe-bg-04.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  .contact-data {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5em;
+    margin: 12em 6em 0em 6em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border-radius: 0.2em;
+    font-size: 1.2em;
+  }
+
+  .contact-heading {
+    color: var(--about-text-color);
+    font-size: 2em;
+  }
+
+  .contact-text {
+    color: var(--about-text-color);
+  }
+
+  .map-btn {
+    background-color: var(--about-text-color);
+    color: white;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 0.2em;
+    align-self: center;
+  }
+
+  .dot {
+    color: white;
+    padding: 0.2em;
+  }
+
+  .map {
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 14.5em;
+    width: 35%;
+    border-radius: 0.2em;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+    padding: 3em;
+  }
+
+  input,
+  textarea {
+    padding: 1em;
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--text-color);
+    font-size: 1.2em;
+    outline: none;
+  }
+
+  .send {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .copyright {
+    color: white;
+    text-align: center;
+    padding: 3em;
+    font-size: 1.3em;
+    margin-top: 10em;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .firstNavToggle {
+    display: none;
+  }
+}
